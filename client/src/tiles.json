@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/bart.png",
+        "name": "Bart Simpson"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/carl.png",
+        "name": "Carl Calson"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/kirk.png",
+        "name": "Kirk Van Houten"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/lisa.png",
+        "name": "Lisa Simpson"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/maggie.png",
+        "name": "Maggie Simpson"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/marge.png",
+        "name": "Marge Simpson"
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/ned.png",
+        "name": "Ned Flanders"
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/nelson.png",
+        "name": "Nelson Muntz"
+    },
+    {
+        "id": 9,
+        "image": "/assets/images/ralph.png",
+        "name": "Ralph Wiggum"
+    },
+    {
+        "id": 10,
+        "image": "/assets/images/reverend.png",
+        "name": "Reverend Lovejoy"
+    },
+    {
+        "id": 11,
+        "image": "/assets/images/sideshow-bob.png",
+        "name": "Sideshow Bob"
+    },
+    {
+        "id": 12,
+        "image": "/assets/images/slh.png",
+        "name": "Santa's Little Helper"
+    }
+]

@@ -1,0 +1,33 @@
+.mainH{
+    text-align: center;
+    padding-top:35px;
+    padding-bottom:35px;
+    background-color:#4BC6B9;
+    color:white;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    margin-bottom:0px;
+    position:relative
+
+
+}
+.scoreBoard{
+    text-align: center;
+    padding-top:35px;
+    padding-bottom:35px;
+    background-image:url("footer.png");
+    color:white;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+}
+
+h1{
+    font-size: 60px;
+}
+#message{
+    margin-top:7%;
+    margin-left:10px;
+    font-size:22px;
+}
+#scores{
+    font-size:18px;
+    margin-top:3%;
+}
