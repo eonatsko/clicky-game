@@ -16,6 +16,40 @@ class Game extends Component {
     }
 
     updateScore = (id) => {
+        this.emptyArr(id)
+            this.setState({
+                clickedId: [...this.state.clickedId, id],
+            })
+            this.mainLogic(id)
+
+    }
+    mainLogic=(id)=>{
+        for (var i = 0; i <= this.state.clickedId.length - 1; i++) {
+            if (id === this.state.clickedId[i]) {
+                this.setState({
+                message: "Oh No! You chose the same character twice!"
+                })
+                if (this.state.score > this.state.topScore) {
+                    this.setState({
+                        topScore: this.state.score,
+                    });
+                }
+                return this.setState({
+                    clickedId: [],
+                    score: 0,
+
+                });
+            }
+            else {
+                const newScore = this.state.score + 1
+                this.setState({
+                    score: newScore
+                })
+            }
+        
+    }
+    }
+    emptyArr=(id) =>{
         if (this.state.clickedId.length === 0) {
             this.setState({
                 score: this.state.score + 1,
@@ -24,36 +58,8 @@ class Game extends Component {
 
             });
         }
-        else {
-            this.setState({
-                clickedId: [...this.state.clickedId, id],
-            })
-            for (var i = 0; i <= this.state.clickedId.length - 1; i++) {
-                if (id === this.state.clickedId[i]) {
-                    this.setState({
-                    message: "Oh No! You chose the same character twice!"
-                    })
-                    if (this.state.score > this.state.topScore) {
-                        this.setState({
-                            topScore: this.state.score,
-                        });
-                    }
-                    return this.setState({
-                        clickedId: [],
-                        score: 0,
-
-                    });
-                }
-                else {
-                    const newScore = this.state.score + 1
-                    this.setState({
-                        score: newScore
-                    })
-                }
-            }
-        }
     }
-
+    
     shuffleTiles = (tiles) => {
         tiles = this.state.characters
         var j, x, i;
